@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pankaj | Portfolio</title>
+    <meta name="description" content="Pankaj — software engineer. Work, skills, and ways to get in touch." />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2355198b'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-size='16' fill='white' font-family='sans-serif'%3EP%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <a class="logo" href="#greeting">
+        <span class="logo-mark">&lt;</span>
+        <span class="logo-name">Pankaj</span>
+        <span class="logo-mark">/&gt;</span>
+      </a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn" aria-label="Open menu"><span></span></label>
+      <nav class="nav">
+        <a href="#skills">Skills</a>
+        <a href="#experience">Work Experiences</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact Me</a>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme">
+          <span class="toggle-track"><span class="toggle-emoji" id="theme-emoji">🌙</span></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="greeting">
+        <div class="hero-copy reveal">
+          <h1>Hi there! I am Pankaj <span class="wave" aria-hidden="true">👋</span></h1>
+          <p>
+            A software engineer who builds clear interfaces and dependable products.
+            I work with modern JavaScript, thoughtful design, and code that stays easy to change.
+          </p>
+          <div class="socials">
+            <a class="social github" href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a class="social linkedin" href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a class="social mail" href="mailto:pankaj@email.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <a class="social medium" href="https://medium.com" target="_blank" rel="noopener noreferrer" aria-label="Medium"><i class="fab fa-medium"></i></a>
+            <a class="social stack" href="https://stackoverflow.com" target="_blank" rel="noopener noreferrer" aria-label="Stack Overflow"><i class="fab fa-stack-overflow"></i></a>
+          </div>
+          <div class="hero-actions">
+            <a class="btn" href="#contact">Contact me</a>
+            <button class="btn" id="resume" type="button">Download my resume</button>
+          </div>
+        </div>
+        <div class="hero-art reveal" aria-hidden="true">
+          <div class="lottie" data-lottie="lottie/landingPerson.json"></div>
+        </div>
+      </section>
+
+      <section class="skills" id="skills">
+        <div class="skills-art reveal" aria-hidden="true">
+          <div class="lottie" data-lottie="lottie/codingPerson.json"></div>
+        </div>
+        <div class="skills-copy reveal">
+          <h2>What I do</h2>
+          <p class="lede">Software engineer focused on product quality, performance, and clean architecture</p>
+          <ul class="skill-grid">
+            <li><i class="fab fa-js"></i><span>JavaScript</span></li>
+            <li><i class="fab fa-react"></i><span>React</span></li>
+            <li><i class="fab fa-node-js"></i><span>Node.js</span></li>
+            <li><i class="fab fa-python"></i><span>Python</span></li>
+            <li><i class="fab fa-html5"></i><span>HTML5</span></li>
+            <li><i class="fab fa-css3-alt"></i><span>CSS3</span></li>
+            <li><i class="fas fa-database"></i><span>SQL</span></li>
+            <li><i class="fab fa-git-alt"></i><span>Git</span></li>
+            <li><i class="fab fa-figma"></i><span>Figma</span></li>
+            <li><i class="fab fa-docker"></i><span>Docker</span></li>
+            <li><i class="fab fa-aws"></i><span>AWS</span></li>
+            <li><i class="fas fa-infinity"></i><span>CI/CD</span></li>
+            <li><i class="fas fa-code"></i><span>TypeScript</span></li>
+            <li><i class="fas fa-leaf"></i><span>MongoDB</span></li>
+            <li><i class="fas fa-plug"></i><span>REST API</span></li>
+            <li><i class="fas fa-project-diagram"></i><span>GraphQL</span></li>
+            <li><i class="fas fa-mobile-alt"></i><span>Responsive UI</span></li>
+            <li><i class="fas fa-vial"></i><span>Testing</span></li>
+          </ul>
+          <ul class="bullets">
+            <li>Design and ship responsive web apps with React and TypeScript</li>
+            <li>Build REST APIs and data models that stay simple to extend</li>
+            <li>Improve performance, accessibility, and release workflows</li>
+            <li>Work with design and product from the first sketch to launch</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="proficiency" id="proficiency">
+        <div class="reveal">
+          <h2>Proficiency</h2>
+          <div class="bars">
+            <div class="bar-row">
+              <span>Frontend Engineering</span>
+              <div class="bar"><span style="--w: 90%"></span></div>
+            </div>
+            <div class="bar-row">
+              <span>Backend &amp; APIs</span>
+              <div class="bar"><span style="--w: 82%"></span></div>
+            </div>
+            <div class="bar-row">
+              <span>UI/UX &amp; Performance</span>
+              <div class="bar"><span style="--w: 78%"></span></div>
+            </div>
+          </div>
+        </div>
+        <div class="prof-art reveal" aria-hidden="true">
+          <div class="lottie" data-lottie="lottie/build.json"></div>
+        </div>
+      </section>
+
+      <section class="education reveal" id="education">
+        <h2>Education</h2>
+        <article class="edu">
+          <div class="edu-logo">CS</div>
+          <div>
+            <h3>Your University</h3>
+            <h4>B.Tech in Computer Science</h4>
+            <p class="meta">2018 – 2022 | Distinction</p>
+            <p>Active in coding clubs, hackathons, and student tech communities.</p>
+            <ul><li>Graduated with a focus on software engineering</li></ul>
+          </div>
+        </article>
+        <article class="edu">
+          <div class="edu-logo">HS</div>
+          <div>
+            <h3>Your Senior Secondary School</h3>
+            <h4>Intermediate</h4>
+            <p class="meta">2018</p>
+            <ul><li>Science stream</li></ul>
+          </div>
+        </article>
+        <article class="edu">
+          <div class="edu-logo">HS</div>
+          <div>
+            <h3>Your High School</h3>
+            <h4>High School</h4>
+            <p class="meta">2016</p>
+            <ul><li>Board examinations</li></ul>
+          </div>
+        </article>
+      </section>
+
+      <section class="experience reveal" id="experience">
+        <h2>Experiences</h2>
+        <div class="card-row">
+          <article class="exp-card">
+            <div class="exp-head" style="background:#111">
+              <h3>Northwind</h3>
+              <div class="exp-badge">N</div>
+            </div>
+            <div class="exp-body">
+              <h4>Software Engineer</h4>
+              <p class="meta">January 2024 – Present</p>
+              <p>Building customer-facing web products, tightening performance, and helping the team ship smaller, safer releases.</p>
+            </div>
+          </article>
+          <article class="exp-card">
+            <div class="exp-head" style="background:#c7b56a">
+              <h3>Lumen Labs</h3>
+              <div class="exp-badge light">L</div>
+            </div>
+            <div class="exp-body">
+              <h4>Software Engineer</h4>
+              <p class="meta">June 2022 – December 2023</p>
+              <p>Shipped React features, partner APIs, and internal tools used by design and support every day.</p>
+            </div>
+          </article>
+          <article class="exp-card">
+            <div class="exp-head" style="background:#3e4d6d">
+              <h3>Harbor Studio</h3>
+              <div class="exp-badge">H</div>
+            </div>
+            <div class="exp-body">
+              <h4>Associate Engineer</h4>
+              <p class="meta">July 2021 – May 2022</p>
+              <p>Turned product sketches into responsive interfaces and kept component libraries consistent across apps.</p>
+            </div>
+          </article>
+          <article class="exp-card">
+            <div class="exp-head" style="background:#a33d45">
+              <h3>Campus Lab</h3>
+              <div class="exp-badge">C</div>
+            </div>
+            <div class="exp-body">
+              <h4>Engineering Intern</h4>
+              <p class="meta">May 2020 – July 2020</p>
+              <p>Prototyped a student portal and learned how a small team reviews, tests, and releases software.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="projects reveal" id="projects">
+        <h2>Projects</h2>
+        <div class="card-row">
+          <article class="project-card">
+            <div class="project-art" style="background:#f3e27a;color:#1c2430">Atlas</div>
+            <h3>Atlas Notes</h3>
+            <p>A focused notes app with search, tags, and offline drafts for everyday writing.</p>
+            <a class="chip" href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </article>
+          <article class="project-card">
+            <div class="project-art" style="background:linear-gradient(135deg,#2f6bff,#163a9a)">Trail</div>
+            <h3>Trail Budget</h3>
+            <p>A personal budget tracker that groups spending and shows a calm monthly picture.</p>
+            <a class="chip" href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </article>
+          <article class="project-card">
+            <div class="project-art" style="background:#f7f7fb;color:#1c2430">Field</div>
+            <h3>Field Kit</h3>
+            <p>A component starter for marketing sites: type, buttons, cards, and dark mode.</p>
+            <a class="chip" href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </article>
+          <article class="project-card">
+            <div class="project-art" style="background:#111;color:#fff">Pulse</div>
+            <h3>Pulse Status</h3>
+            <p>A tiny status page that reads health checks and explains incidents in plain language.</p>
+            <a class="chip" href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="achievements reveal" id="achievements">
+        <h2>Achievements And Recognitions <span aria-hidden="true">🏆</span></h2>
+        <div class="card-row">
+          <article class="award-card">
+            <div class="award-art" style="background:#f6c445;color:#1c2430">Merit</div>
+            <h3>Academic Scholarship</h3>
+            <p>Recognized for consistent academic performance through the degree.</p>
+          </article>
+          <article class="award-card">
+            <div class="award-art" style="background:#7d5cff">Talk</div>
+            <h3>Community Tech Talk</h3>
+            <p>Shared a practical walkthrough of building accessible interfaces with React.</p>
+          </article>
+          <article class="award-card">
+            <div class="award-art" style="background:#f4f6fb;color:#163a9a">Lead</div>
+            <h3>Student Tech Lead</h3>
+            <p>Organized workshops and helped juniors ship their first web projects.</p>
+          </article>
+          <article class="award-card">
+            <div class="award-art" style="background:#1c2430">Hack</div>
+            <h3>Hackathon Finalist</h3>
+            <p>Built a weekend prototype that made a messy workflow easier to follow.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="reveal">
+          <h2>Contact Me <span aria-hidden="true">📞</span></h2>
+          <p class="contact-kicker">Discuss a project or just want to say hi? My inbox is open for all.</p>
+          <a class="contact-mail" href="mailto:pankaj@email.com">pankaj@email.com</a>
+          <div class="socials">
+            <a class="social github" href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a class="social linkedin" href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a class="social mail" href="mailto:pankaj@email.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <a class="social medium" href="https://medium.com" target="_blank" rel="noopener noreferrer" aria-label="Medium"><i class="fab fa-medium"></i></a>
+            <a class="social stack" href="https://stackoverflow.com" target="_blank" rel="noopener noreferrer" aria-label="Stack Overflow"><i class="fab fa-stack-overflow"></i></a>
+          </div>
+        </div>
+        <div class="contact-art reveal" aria-hidden="true">
+          <div class="lottie" data-lottie="lottie/email.json"></div>
+        </div>
+      </section>
+    </main>
+
+    <button class="to-top" id="to-top" type="button" aria-label="Go to top">
+      <i class="fas fa-thumbs-up"></i>
+    </button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
