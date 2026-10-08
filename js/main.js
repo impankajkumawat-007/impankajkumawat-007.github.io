@@ -44,7 +44,14 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.4 });
 bars.forEach((bar) => observer.observe(bar));
 
-document.getElementById("resume").addEventListener("click", () => window.print());
+document.getElementById("resume").addEventListener("click", () => {
+  const link = document.createElement('a');
+  link.href = 'resume.pdf'; // Path to your PDF file
+  link.download = 'resume.pdf';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+});
 
 function playLottie(el) {
   if (!window.lottie || el.dataset.playing) return;
